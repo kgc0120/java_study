@@ -26,6 +26,7 @@ public class ComplexNumbering {
         map = new int[n][n];
         visited = new boolean[n][n];
 
+        // 지도 입력
         for (int i = 0; i < n; i++) {
             String input = scanner.next();
             for (int j = 0; j < n; j++) {
@@ -66,8 +67,8 @@ public class ComplexNumbering {
             queue.poll();
 
             for (int k = 0; k < 4; k++) {
-                int nx = curX + dx[i];
-                int ny = curY + dy[i];
+                int nx = curX + dx[k];
+                int ny = curY + dy[k];
 
                 if (nx >= 0 && ny >= 0 && nx < n && ny < n) {
                     if (map[nx][ny] == 1 && !visited[nx][ny]) {
