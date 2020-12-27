@@ -10,14 +10,14 @@ public final class FinalEx {
 
     public static void main(String[] args) {
         FinalEx finalEx = new FinalEx();
-        finalEx.num = 200;
+//        finalEx.num = 200;
     }
 }
 
-class FinalChild extends FinalEx{
-
-    @Override
-    public void add() {
-    }
-
-}
+//class FinalChild extends FinalEx{
+//
+//    @Override
+//    public void add() {
+//    }
+//
+//}
