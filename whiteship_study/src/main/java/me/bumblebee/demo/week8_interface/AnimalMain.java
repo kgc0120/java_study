@@ -4,13 +4,14 @@ public class AnimalMain {
 
     public static void main(String[] args) {
 
-//        Cat cat = new Cat();
+        Cat cat = new Cat();
 //        Dog dog = new Dog();
 //
 //        printNmae(cat);
 //        printNmae(dog);
 
         Animal.print();
+        cat.getType();
 
     }
 

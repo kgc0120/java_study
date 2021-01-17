@@ -5,6 +5,7 @@ public interface Animal extends AnimalFuc, Comparable{
     String getName();
 
     default String getType() {
+//        privateMet();
         return "";
     }
 
@@ -12,9 +13,14 @@ public interface Animal extends AnimalFuc, Comparable{
         System.out.println("interface static method");
     }
 
-    private static void privateMethod() {
+//    private void privateMet() {
+//        System.out.println("private methoed");
+//    }
+//
+//    private static void staticPrivateMet() {
+//
+//    }
 
-    }
 }
 
 
