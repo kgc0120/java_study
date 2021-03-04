@@ -12,6 +12,7 @@ public class TypeMain {
 
         float float_v1 = 1.23f; // f, F -> float 타입 리터럴
 
+
         System.out.println(int_v1);
         System.out.println(int_v2);
         System.out.println(int_v3);

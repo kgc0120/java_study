@@ -11,9 +11,9 @@ public class ScopeAndLifetime {
     }
 
     public static void main(String[] args) {
-            ScopeAndLifetime ob = new ScopeAndLifetime();
-            result = ob.add(10, 20);
-            System.out.println("Sum = " + result);
+        ScopeAndLifetime ob = new ScopeAndLifetime();
+        result = ob.add(10, 20);
+        System.out.println("Sum = " + result);
     }
 }
 
