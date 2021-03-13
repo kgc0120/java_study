@@ -1,3 +1,2 @@
-FileWriter는 한글로된 
-문자열을 바로 출력할 수 잆다.
-show me the money
+FileWriter 테스트입니다. 
+참 쉽죠잉?
