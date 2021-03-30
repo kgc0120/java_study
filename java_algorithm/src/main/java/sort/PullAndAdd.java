@@ -3,6 +3,11 @@ package sort;
 import java.util.Arrays;
 import java.util.HashSet;
 
+/*
+* 두개 뽑아서 더하기
+* https://programmers.co.kr/learn/courses/30/lessons/68644
+* */
+
 public class PullAndAdd {
 
     public static void main(String[] args) {
