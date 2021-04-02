@@ -18,7 +18,7 @@ public class TriangleSnail {
 
     public static int[] solution(int n) {
 
-        int maxNum = getMaxNum(n);
+        int maxNum = getMaxNum(n); // 최댓값 가져오기
         int[] answer = new int[maxNum];
         int[][] array = new int[n][n];
         int compareNum = 1;
@@ -45,6 +45,7 @@ public class TriangleSnail {
                 compareNum++;
             }
 
+            // 대각선 값 입력
             i -= 1;
             j -= 2;
             while (array[i][j] == 0 && array[i-1][j-1] == 0 && compareNum <= maxNum) {
