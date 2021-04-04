@@ -21,6 +21,7 @@ public class ComplexNumbering {
     private static int[][] map = new int[25][25];
 
     public static void main(String[] args) {
+        System.out.println("git test");
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
         map = new int[n][n];
@@ -54,6 +55,8 @@ public class ComplexNumbering {
             }
         }
     }
+
+
 
     private static void bfs(int i, int j) {
         Queue<int[]> queue = new LinkedList<>();
