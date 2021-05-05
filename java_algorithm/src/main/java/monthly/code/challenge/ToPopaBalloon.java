@@ -44,6 +44,7 @@ public class ToPopaBalloon {
             }
             answer ++;
         }
+        System.out.println("test");
         return answer;
     }
 
