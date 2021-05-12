@@ -2,7 +2,12 @@ package monthly.code.challenge;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
+/*
+* https://programmers.co.kr/learn/courses/30/lessons/68935
+* 3진법 뒤집기
+* */
 public class ThreeBaseFlip {
 
     public static void main(String[] args) {
@@ -16,7 +21,7 @@ public class ThreeBaseFlip {
 
     public static int solution(int n) {
         int answer = 0;
-        ArrayList<Integer> threeSystemList = new ArrayList<Integer>();
+        List<Integer> threeSystemList = new ArrayList<>();
 
         if(n < 3) {
             threeSystemList.add(n);
