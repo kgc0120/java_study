@@ -59,8 +59,7 @@ public class TwoBelowDifferentBit {
                             BinaryString.substring(2,BinaryString.length()).replace("0","1");
 
                 }else{
-                    BinaryString = BinaryString.substring(0,lastindex)+"1"+
-                            BinaryString.substring(lastindex+1,firstindex)+"0"+
+                    BinaryString = BinaryString.substring(0,lastindex)+"10"+
                             BinaryString.substring(firstindex+1,BinaryString.length());
                 }
                 answer[i] = Long.parseLong(BinaryString,2);
