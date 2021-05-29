@@ -7,7 +7,7 @@ import java.util.Arrays;
 * */
 public class TwoBelowDifferentBit {
     public static void main(String[] args) {
-        long[] numbers = {2,7};
+        long[] numbers = {7};
         System.out.println(Arrays.toString(solution2(numbers)));
 //        long l = 7 ^ 9;
 //        System.out.println("l = " +l);
