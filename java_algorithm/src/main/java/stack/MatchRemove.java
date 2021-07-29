@@ -2,6 +2,11 @@ package stack;
 
 import java.util.Stack;
 
+/*
+* https://programmers.co.kr/learn/courses/30/lessons/12973
+* stack 문제
+*
+ */
 public class MatchRemove {
 
     public static void main(String[] args) {
@@ -15,7 +20,19 @@ public class MatchRemove {
     {
         int answer = -1;
 
+        /*
+        * 개선점 1
+        * Stack<Character> stack = new Stack<>();
+        * Character type Stack 생성
+        * */
         Stack<String> stack = new Stack<>();
+
+
+        /*
+         * 개선점 2
+         * for(char c : s.toCharArray())
+         * toCharArray() 메소드 이용해서 for each문 사용 가능
+         * */
         for (int i = 0; i < s.length(); i++) {
             if(!stack.isEmpty()) {
                 String peek = stack.peek();
@@ -33,6 +50,13 @@ public class MatchRemove {
         } else {
             answer = 1;
         }
+
+        /*
+        *
+        * 개선점 3
+        * 삼항연산자
+        * return statck.size() > 0?  0 : 1;
+        * */
         return answer;
     }
 
