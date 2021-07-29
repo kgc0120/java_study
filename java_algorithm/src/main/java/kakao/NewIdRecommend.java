@@ -2,6 +2,11 @@ package kakao;
 
 import java.util.Locale;
 
+/*
+* https://programmers.co.kr/learn/courses/30/lessons/72410
+* 문자열 문제
+* 정규표현식 사용법
+ */
 public class NewIdRecommend {
 
     public static void main(String[] args) {
