@@ -59,17 +59,20 @@ public class GroupPhoto {
     }
 
     public static boolean check(){
-        int a,b,res;
-        char op;
+        int friends; // 프렌즈
+        int opponent; // 상대방
+        int interval; //간격
+        char inequalitySign; // 부등호
         for(String s : d){
-            a = ch[map.get(s.charAt(0))];
-            b = ch[map.get(s.charAt(2))];
-            op = s.charAt(3);
-            res = s.charAt(4)-'0' + 1;
+            friends = ch[map.get(s.charAt(0))];
 
-            if(op == '='){ if(Math.abs(a-b)!=res) return false;}
-            else if(op == '>'){ if(Math.abs(a-b) <= res) return false;}
-            else {if(Math.abs(a-b) >= res) return false;}
+            opponent = ch[map.get(s.charAt(2))];
+            inequalitySign = s.charAt(3);
+            interval = s.charAt(4)-'0' + 1;
+
+            if(inequalitySign == '='){ if(Math.abs(friends - opponent) != interval) return false;}
+            else if(inequalitySign == '>'){ if(Math.abs(friends - opponent) <= interval) return false;}
+            else {if(Math.abs(friends - opponent) >= interval) return false;}
         }
         return true;
     }
