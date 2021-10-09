@@ -51,7 +51,7 @@ public class MathematicalMax {
         ArrayList<String> newList = new ArrayList<String>();
         ArrayList<Character> newSymbols = new ArrayList<Character>();
 
-        newList.addAll(splitData);
+        newList.addAll(splitData); // 깊은 복사
         newSymbols.addAll(symbols);
 
         while(newList.size() > 1) {
@@ -69,7 +69,7 @@ public class MathematicalMax {
                     newList.remove(i+1);
                     newList.remove(i+1);
                     newSymbols.remove(i);
-                    i =-1;
+                    i =-1; // 삭제하고 for문 다시 처음부터 검색
                 }
             }
             pattenCnt++;
